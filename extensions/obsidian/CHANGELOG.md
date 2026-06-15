@@ -1,5 +1,9 @@
 # Obsidian Changelog
 
+## [Create Quicklink for Vault] - {PR_MERGE_DATE}
+
+- Add `Create Quicklink` action to `Open Vault` command
+
 ## [Fix] - 2026-05-05
 
 - Fix vault auto-discovery on Windows and Linux by reading `obsidian.json` from the per-platform Obsidian config dir

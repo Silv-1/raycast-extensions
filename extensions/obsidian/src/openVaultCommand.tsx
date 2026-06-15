@@ -37,6 +37,13 @@ export default function Command() {
                   icon={Icon.ArrowRight}
                   target={Obsidian.getTarget({ type: ObsidianTargetType.OpenVault, vault: vault })}
                 />
+                <Action.CreateQuicklink
+                  title="Create Quicklink"
+                  quicklink={{
+                    name: `Open Vault: ${vault.name}`,
+                    link: Obsidian.getTarget({ type: ObsidianTargetType.OpenVault, vault: vault }),
+                  }}
+                />
                 <ShowVaultInFinderAction vault={vault} />
                 <CopyVaultPathAction vault={vault} />
               </ActionPanel>
